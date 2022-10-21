@@ -1,0 +1,11 @@
+{
+  "env_builder": {
+    "build_id": 10001,
+    "stack_name": "Sample react forms builder",
+    "built_by": "Alan T. Andrea",
+    "client": "Alan Andrea",
+    "environment": "DEV ENV",
+    "base_web_url": "http://forms-sample.s3-website-us-east-1.amazonaws.com/"
+
+  }
+}

@@ -1,0 +1,20 @@
+{
+    "form_name": "Testing Form sample project",
+    "form_desc": "Sample form for building a web page form dynamically",
+    "author": "Alan T. Andrea",
+    "form_fields": [{
+            "id": "1",
+            "form_name": "firstname",
+            "label": "First Name:",
+            "type": "text_field",
+            "size": "20"
+        },
+        {
+            "id": "2",
+            "form_name": "lastname",
+            "label": "Last Name:",
+            "type": "text_field",
+            "size": "30"
+        }
+    ]
+}

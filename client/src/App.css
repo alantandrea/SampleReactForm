@@ -1,0 +1,100 @@
+@import "./bootstrap.min.css";
+
+img[alt=""] {
+  display: block;
+  margin: auto;
+  width: 250px;
+}
+
+.row {
+  display: flex;
+  min-width: 100%;
+  max-width: 100%
+}
+
+
+.rowb {
+  display: flex;
+}
+
+.column {
+  flex: 20%;
+  padding-top: 100px;
+  padding-left: 400px;
+
+}
+
+.columnb {
+  flex: 50%;
+  padding: 5px;
+}
+
+
+.column1 {
+  flex: 10%;
+  padding: 20px;
+  height: 20px;
+}
+
+.column2 {
+  flex: 10%;
+  padding: 20px;
+  height: 20px;
+}
+
+
+.card-header {
+  background: rgb(255, 255, 255);
+  text-align: left;
+  color: blue;
+}
+
+.card-body {
+  background: rgb(255, 255, 255);
+  color: rgb(146, 37, 37);
+  text-decoration-color: blue;
+  text-align: left;
+}
+
+.card {
+  background: rgb(255, 255, 255);
+  color: rgb(146, 37, 37);
+  text-decoration-color: blue;
+  text-align: left;
+}
+
+
+.container {
+  background: rgb(255, 255, 255);
+  color: rgb(146, 37, 37);
+  text-decoration-color: blue;
+  text-align: left;
+}
+
+.specinput {
+  overflow: visible;
+  width: 250px;
+}
+
+.eye {
+  height: 15px;
+  width: 15px;
+}
+
+.drag-row {
+  overflow: unset !important;
+}
+
+.drag-row .ag-cell-value {
+  padding-left: 24px;
+}
+
+.drag-row .ag-row-drag {
+  position: absolute;
+  width: 1200px;
+  z-index: 2;
+}
+
+.float-left-child {
+  float: left;
+}

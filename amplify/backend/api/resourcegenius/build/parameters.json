@@ -1,0 +1,7 @@
+{
+    "AppSyncApiName": "resourcegenius",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "S3DeploymentBucket": "amplify-resourcegenius-dev-120517-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/1f8f9f8c7d31742cfd9fd3558572e4330635ce14"
+}

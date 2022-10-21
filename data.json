@@ -1,0 +1,22 @@
+{
+  "projectData": [
+    {
+      "project": "Neustar Project",
+      "description": "Forgerock upgrade on AWS",
+      "startDate": "02/28/2022",
+      "dueDate": "03/01/2022",
+      "expectedHours": 100,
+      "completedHours": 75,
+      "id": "0"
+    },
+    {
+      "project": "Smarter Balanced",
+      "description": "Web 2.0 application build",
+      "startDate": "09/15/2021",
+      "dueDate": "11/15/2022",
+      "expectedHours": 100,
+      "completedHours": 75,
+      "id": "1"
+    }
+  ]
+}
