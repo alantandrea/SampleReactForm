@@ -12,18 +12,18 @@ import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 
-const IDFMain: FunctionComponent = (): React.ReactElement => {
+const QuestionsPage2: FunctionComponent = (): React.ReactElement => {
   const env: IDF_ENV = envConfig;
 
   const [dynamicHTML, setDynamicHTML] = useState<string>("");
-  const [firstName, setFirstName] = useState<string>("");
-  const [lastName, setLastName] = useState<string>("");
+  const [state, setState] = useState<string>("");
+  const [country, setCountry] = useState<string>("");
 
   // ----------------------------------------------------------------------------------------------------------------------------------------------------
   async function getFormData() {
     console.log(" Saving the new project to the back-end ");
 
-    const url = env.env_builder.base_web_url + "formBuilder.json";
+    const url = env.env_builder.base_web_url + "questionaire2.json";
     let JSONResult = "";
 
     try {
@@ -70,13 +70,13 @@ const IDFMain: FunctionComponent = (): React.ReactElement => {
 
   // -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
-  const onKeyUpFirstName = event => {
-    setFirstName(event.target.value);
+  const onKeyUpState = event => {
+    setState(event.target.value);
     console.log(" Key pressed: " + event.target.value);
   };
 
-  const onKeyUpLastName = event => {
-    setLastName(event.target.value);
+  const onKeyUpCountry = event => {
+    setCountry(event.target.value);
     console.log(" Key pressed: " + event.target.value);
   };
 
@@ -90,8 +90,8 @@ const IDFMain: FunctionComponent = (): React.ReactElement => {
       const input = divId.querySelectorAll("input");
 
       if (input && input.length > 0) {
-        input[0].addEventListener("keyup", onKeyUpFirstName);
-        input[1].addEventListener("keyup", onKeyUpLastName);
+        input[0].addEventListener("keyup", onKeyUpState);
+        input[1].addEventListener("keyup", onKeyUpCountry);
       }
 
       setDynamicHTML(data);
@@ -101,8 +101,7 @@ const IDFMain: FunctionComponent = (): React.ReactElement => {
   });
 
   const doSave: React.MouseEventHandler<HTMLButtonElement> = async () => {
-    alert(" Hello " + firstName + " " + lastName + " I am now going to the next step.... ");
-    window.location.href = "/QuestionsPage2";
+    alert(" from " + state + " " + country + " Thank you.  That's all. ");
   };
 
   return (
@@ -116,7 +115,7 @@ const IDFMain: FunctionComponent = (): React.ReactElement => {
                   <img src={env.env_builder.base_web_url + "cogniticon.jpg"} />
                 </td>
                 <td>
-                  <h3> Questionaire page 1</h3>
+                  <h3> Questionaire Page 2</h3>
                 </td>
               </tr>
             </table>
@@ -135,4 +134,4 @@ const IDFMain: FunctionComponent = (): React.ReactElement => {
   );
 };
 
-export default IDFMain;
+export default QuestionsPage2;

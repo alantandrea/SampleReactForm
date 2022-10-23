@@ -3,16 +3,16 @@
     "form_desc": "Sample form for building a web page form dynamically",
     "author": "Alan T. Andrea",
     "form_fields": [{
-            "id": "firstName",
-            "form_name": "firstname",
-            "label": "First Name:",
+            "id": "state",
+            "form_name": "state",
+            "label": "State:",
             "type": "text_field",
             "size": "20"
         },
         {
-            "id": "lastName",
-            "form_name": "lastname",
-            "label": "Last Name:",
+            "id": "country",
+            "form_name": "country",
+            "label": "Country:",
             "type": "text_field",
             "size": "30"
         }

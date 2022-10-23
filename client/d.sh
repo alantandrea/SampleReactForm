@@ -2,7 +2,7 @@
 
 
 npm run build
-aws s3 sync /Users/alanandrea/dev/forms/client/build   s3://forms-sample
+aws s3 sync /Users/alanandrea/dev/formapp/SampleReactForm/client/build   s3://forms-sample
 
 
 
