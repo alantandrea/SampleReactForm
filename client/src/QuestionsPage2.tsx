@@ -104,6 +104,10 @@ const QuestionsPage2: FunctionComponent = (): React.ReactElement => {
     alert(" from " + state + " " + country + " Thank you.  That's all. ");
   };
 
+  const goBack: React.MouseEventHandler<HTMLButtonElement> = async () => {
+    window.location.href = "/";
+  };
+
   return (
     <div className="container my-4">
       <div className="card my-3">
@@ -124,10 +128,14 @@ const QuestionsPage2: FunctionComponent = (): React.ReactElement => {
       </div>
       <div className="card-body">
         <div id="my-inputs" className="content" dangerouslySetInnerHTML={{ __html: dynamicHTML }}></div>
-
         <Button style={{ margin: "auto", padding: 10 }} onClick={doSave} variant="primary" type="submit">
           <img src={env.env_builder.base_web_url + "save.png"} width="25" alt="Save" />
           Save
+        </Button>
+        &nbsp;&nbsp;
+        <Button style={{ margin: "auto", padding: 10 }} onClick={goBack} variant="primary" type="submit">
+          <img src={env.env_builder.base_web_url + "save.png"} width="25" alt="Save" />
+          Back
         </Button>
       </div>
     </div>

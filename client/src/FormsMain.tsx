@@ -127,8 +127,8 @@ const IDFMain: FunctionComponent = (): React.ReactElement => {
         <div id="my-inputs" className="content" dangerouslySetInnerHTML={{ __html: dynamicHTML }}></div>
 
         <Button style={{ margin: "auto", padding: 10 }} onClick={doSave} variant="primary" type="submit">
-          <img src={env.env_builder.base_web_url + "save.png"} width="25" alt="Save" />
-          Save
+          <img src={env.env_builder.base_web_url + "save.png"} width="25" alt="Next" />
+          Next
         </Button>
       </div>
     </div>
